@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
-import { profileData } from "@/data/profile";
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -30,7 +29,7 @@ export function ContactForm() {
     setErrorMessage("");
 
     try {
-      const response = await fetch(profileData.contact.formspreeEndpoint, {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -41,7 +40,7 @@ export function ContactForm() {
 
       const data = await response.json();
 
-      if (response.ok) {
+      if (response.ok && data.success) {
         setStatus("success");
         setFormData({
           name: "",
@@ -51,40 +50,40 @@ export function ContactForm() {
         });
       } else {
         setStatus("error");
-        if (data.errors && Array.isArray(data.errors)) {
-          setErrorMessage(data.errors.map((err: { message: string }) => err.message).join(", "));
-        } else {
-          setErrorMessage("Failed to send message. Please try again or reach out directly via email.");
-        }
+        setErrorMessage(
+          data.error || "Failed to transmit message. Please try again or email directly."
+        );
       }
     } catch {
       setStatus("error");
-      setErrorMessage("Network error occurred. Please reach out directly to usamatahir717@gmail.com");
+      setErrorMessage(
+        "Network error occurred. Please try again or reach out directly to usamatahir717@gmail.com"
+      );
     }
   };
 
   return (
-    <div className="glass-panel rounded-2xl p-6 sm:p-8">
+    <div className="glass-panel rounded-2xl p-5 sm:p-8">
       {status === "success" ? (
-        <div className="text-center py-12 space-y-4">
+        <div className="text-center py-10 sm:py-12 space-y-4">
           <div className="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto">
             <CheckCircle className="w-6 h-6" />
           </div>
-          <h3 className="text-xl font-bold text-white">Message Received!</h3>
-          <p className="text-sm text-slate-300 max-w-md mx-auto">
-            Thank you for reaching out. I have received your message and will review your inquiry promptly.
+          <h3 className="text-xl font-bold text-white">Message Transmitted!</h3>
+          <p className="text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
+            Thank you for reaching out. Your message has been routed directly to my inbox and I will review it promptly.
           </p>
           <button
             type="button"
             onClick={() => setStatus("idle")}
-            className="mt-4 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-medium rounded-xl transition-colors"
+            className="mt-4 px-4 py-2 bg-slate-800 hover:bg-slate-700 active:bg-slate-900 text-white text-xs font-medium rounded-xl transition-colors cursor-pointer"
           >
             Send Another Message
           </button>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="space-y-5">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
             <div>
               <label
                 htmlFor="name"
@@ -100,7 +99,7 @@ export function ContactForm() {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="e.g. Sarah Jenkins"
-                className="w-full px-4 py-2.5 bg-slate-900/90 border border-slate-700/80 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors"
+                className="w-full px-3.5 sm:px-4 py-2.5 bg-slate-900/90 border border-slate-700/80 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors"
               />
             </div>
 
@@ -119,7 +118,7 @@ export function ContactForm() {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="sarah@company.com"
-                className="w-full px-4 py-2.5 bg-slate-900/90 border border-slate-700/80 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors"
+                className="w-full px-3.5 sm:px-4 py-2.5 bg-slate-900/90 border border-slate-700/80 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors"
               />
             </div>
           </div>
@@ -138,8 +137,8 @@ export function ContactForm() {
               required
               value={formData.subject}
               onChange={handleChange}
-              placeholder="e.g. Backend Architecture / Project Consulting"
-              className="w-full px-4 py-2.5 bg-slate-900/90 border border-slate-700/80 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors"
+              placeholder="e.g. Full-Stack / Python Backend Project"
+              className="w-full px-3.5 sm:px-4 py-2.5 bg-slate-900/90 border border-slate-700/80 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors"
             />
           </div>
 
@@ -158,13 +157,13 @@ export function ContactForm() {
               value={formData.message}
               onChange={handleChange}
               placeholder="Describe your technical requirements, goals, timelines, or role opportunity..."
-              className="w-full px-4 py-2.5 bg-slate-900/90 border border-slate-700/80 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors resize-y"
+              className="w-full px-3.5 sm:px-4 py-2.5 bg-slate-900/90 border border-slate-700/80 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors resize-y"
             ></textarea>
           </div>
 
           {status === "error" && (
-            <div className="flex items-center gap-2 p-3 rounded-xl bg-red-500/10 border border-red-500/20 text-red-300 text-xs">
-              <AlertCircle className="w-4 h-4 shrink-0" />
+            <div className="flex items-start gap-2 p-3 rounded-xl bg-red-500/10 border border-red-500/20 text-red-300 text-xs">
+              <AlertCircle className="w-4 h-4 shrink-0 mt-0.5" />
               <span>{errorMessage}</span>
             </div>
           )}
@@ -191,4 +190,3 @@ export function ContactForm() {
     </div>
   );
 }
-
