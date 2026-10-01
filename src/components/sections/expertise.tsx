@@ -6,6 +6,7 @@ import {
   Search,
   Cpu,
   Layers,
+  Globe,
   ArrowRight,
 } from "lucide-react";
 import Link from "next/link";
@@ -14,6 +15,16 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { TechBadge } from "@/components/ui/tech-badge";
 
 const expertisePillars = [
+  {
+    icon: Globe,
+    iconColor: "text-blue-400",
+    bgGradient: "from-blue-500/10 to-transparent",
+    title: "Web & Full-Stack Development",
+    description:
+      "Engineering modern, type-safe, and responsive web applications with React, Next.js (App Router), TypeScript, Tailwind CSS, and Node.js with high Core Web Vitals performance.",
+    technologies: ["React", "Next.js", "TypeScript", "Node.js", "Tailwind CSS", "Full-Stack"],
+    link: "/services#modern-web-development",
+  },
   {
     icon: Server,
     iconColor: "text-indigo-400",

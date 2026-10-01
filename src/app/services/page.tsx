@@ -8,6 +8,7 @@ import {
   Search,
   Cpu,
   Layers,
+  Globe,
   CheckCircle2,
   Calendar,
 } from "lucide-react";
@@ -44,6 +45,8 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   const getServiceIcon = (iconName: string) => {
     switch (iconName) {
+      case "Globe":
+        return <Globe className="w-6 h-6 text-blue-400" />;
       case "Server":
         return <Server className="w-6 h-6 text-indigo-400" />;
       case "Code":

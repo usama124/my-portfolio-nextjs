@@ -9,6 +9,7 @@ import {
   Cpu,
   Database,
   Terminal,
+  Globe,
 } from "lucide-react";
 import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/ui/icons";
 import { Container } from "@/components/layout/container";
@@ -46,7 +47,7 @@ export function HeroSection() {
 
             {/* Value proposition paragraph */}
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
-              Specializing in scalable Python backends, high-throughput microservices, robust REST APIs, and automated data engineering pipelines with over 6 years of verified engineering experience.
+              Specializing in modern full-stack web applications (React, Next.js, TypeScript), scalable Python microservices, REST APIs, and production AI integrations with over 6 years of verified engineering experience.
             </p>
 
             {/* Quick Metrics Bar */}
@@ -56,12 +57,12 @@ export function HeroSection() {
                 <span className="text-xs text-slate-400">Engineering Experience</span>
               </div>
               <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
-                <span className="block text-xl font-bold font-mono text-indigo-400">19+ Systems</span>
-                <span className="text-xs text-slate-400">Projects & Microservices</span>
+                <span className="block text-xl font-bold font-mono text-indigo-400">20+ Projects</span>
+                <span className="text-xs text-slate-400">Web Apps & Systems</span>
               </div>
               <div className="col-span-2 sm:col-span-1 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
-                <span className="block text-xl font-bold font-mono text-cyan-400">FastAPI & Django</span>
-                <span className="text-xs text-slate-400">Core Backend Stack</span>
+                <span className="block text-xl font-bold font-mono text-cyan-400">Next.js & Python</span>
+                <span className="text-xs text-slate-400">Full-Stack & Backend</span>
               </div>
             </div>
 
@@ -163,20 +164,20 @@ export function HeroSection() {
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-xs text-slate-300">
                     <div className="flex items-center gap-2 p-2 rounded-lg bg-slate-800/50 border border-slate-700/50">
+                      <Globe className="w-3.5 h-3.5 text-blue-400" />
+                      <span>React / Next.js</span>
+                    </div>
+                    <div className="flex items-center gap-2 p-2 rounded-lg bg-slate-800/50 border border-slate-700/50">
                       <Server className="w-3.5 h-3.5 text-indigo-400" />
                       <span>Python Backends</span>
                     </div>
                     <div className="flex items-center gap-2 p-2 rounded-lg bg-slate-800/50 border border-slate-700/50">
                       <Cpu className="w-3.5 h-3.5 text-cyan-400" />
-                      <span>AI Model APIs</span>
+                      <span>AI Integrations</span>
                     </div>
                     <div className="flex items-center gap-2 p-2 rounded-lg bg-slate-800/50 border border-slate-700/50">
                       <Database className="w-3.5 h-3.5 text-emerald-400" />
-                      <span>PostgreSQL / Redis</span>
-                    </div>
-                    <div className="flex items-center gap-2 p-2 rounded-lg bg-slate-800/50 border border-slate-700/50">
-                      <Terminal className="w-3.5 h-3.5 text-amber-400" />
-                      <span>ETL & Scraping</span>
+                      <span>TypeScript / Node</span>
                     </div>
                   </div>
                 </div>

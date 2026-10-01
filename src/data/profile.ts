@@ -5,12 +5,12 @@ export const profileData: ProfileData = {
   preferredName: "Usama Tahir",
   aliases: ["Osama Tahir", "Usama Qureshi", "Osama Qureshi", "Usama Tahir Qureshi", "osamacodes"],
   title: "Senior Software Engineer & AI Engineer",
-  headline: "Specializing in High-Performance Python Backends, Microservices Architecture, and AI Integrations.",
-  shortBio: "Senior Software Engineer and AI Engineer with over 6 years of experience engineering scalable backend systems, robust microservices, real-time data pipelines, and RESTful APIs using Python, Django, FastAPI, and Flask.",
+  headline: "Specializing in Scalable Full-Stack Web Applications, Next.js & React, High-Performance Python Backends, and AI Integrations.",
+  shortBio: "Senior Software Engineer and AI Engineer with over 6 years of experience engineering modern full-stack web applications (React, Next.js, TypeScript, Node.js), scalable backend systems, robust microservices, real-time data pipelines, and RESTful APIs.",
   longBio: [
-    "I am Usama Tahir (also known as Osama Tahir Qureshi), a Senior Software Engineer and AI Engineer based in Lahore, Pakistan. Over the past 6+ years, I have architected and delivered enterprise-grade backend systems, distributed microservices, and specialized data engineering solutions across diverse domains.",
-    "My technical core centers on high-throughput API design, database modeling and query optimization in PostgreSQL, real-time search indexing with Apache Solr, distributed task execution, and integrating machine learning models (NLP sentiment analysis, OCR, STT, and anomaly detection) into resilient production platforms.",
-    "Currently, I serve as a Senior Software Engineer at FiveRivers Technologies, leading backend engineering on data engineering and ETL infrastructure, high-concurrency microservices, and cloud-integrated systems."
+    "I am Usama Tahir (also known as Osama Tahir Qureshi), a Senior Software Engineer and AI Engineer based in Lahore, Pakistan. Over the past 6+ years, I have architected and delivered enterprise-grade web applications, distributed microservices, and specialized data engineering solutions across diverse domains.",
+    "My technical competence bridges modern full-stack development—building responsive, type-safe, and high-performance frontend interfaces with React, Next.js, TypeScript, and Node.js—with robust backend engineering. My core centers on high-throughput API design, database modeling and query optimization in PostgreSQL, real-time search indexing with Apache Solr, distributed task execution, and integrating machine learning models into resilient production platforms.",
+    "Currently, I serve as a Senior Software Engineer at FiveRivers Technologies, leading backend engineering on data pipelines and ETL infrastructure, high-concurrency microservices, full-stack systems, and cloud-integrated platforms."
   ],
   location: {
     city: "Lahore",
@@ -28,18 +28,22 @@ export const profileData: ProfileData = {
   resume: {
     filename: "Usama-Tahir-Python-Resume-20251118.pdf",
     path: "/images/Usama-Tahir-Python-Resume-20251118.pdf",
-    updatedLabel: "Python Backend & AI Resume",
+    updatedLabel: "Software Engineering & AI Resume",
   },
   stats: {
     yearsOfExperience: "6+",
-    projectsDelivered: "19+",
-    coreFocus: "Python Backend & Microservices",
+    projectsDelivered: "20+",
+    coreFocus: "Full-Stack, Python Backends & AI",
     availability: "Available for Senior Roles & Consulting",
   },
   skillsHierarchy: [
     {
-      category: "Backend & Frameworks",
-      skills: ["Python", "FastAPI", "Django", "Django REST Framework", "Flask", "RESTful APIs", "Microservices Architecture"],
+      category: "Web & Full-Stack Development",
+      skills: ["React", "Next.js", "TypeScript", "JavaScript (ES6+)", "Node.js", "Tailwind CSS", "HTML5/CSS3", "REST APIs", "Web Crypto API", "Client-Side Engines"],
+    },
+    {
+      category: "Backend & Microservices",
+      skills: ["Python", "FastAPI", "Django", "Django REST Framework", "Flask", "Microservices Architecture", "Asynchronous Programming"],
     },
     {
       category: "Databases & Caching",
@@ -57,10 +61,5 @@ export const profileData: ProfileData = {
       category: "DevOps, Cloud & Tooling",
       skills: ["Docker", "Kubernetes", "AWS (EC2, RDS, S3, SES, Lambda, CloudFront)", "CI/CD (Jenkins, GitHub Actions)", "Linux OS", "Git", "Postman", "Insomnia"],
     },
-    {
-      category: "Frontend & Integrations",
-      skills: ["React.js", "Tailwind CSS", "HTML5/CSS3", "Stripe API", "Twilio API", "DirectAdmin"],
-    },
   ],
 };
-

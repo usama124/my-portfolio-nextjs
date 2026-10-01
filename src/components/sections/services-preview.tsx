@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Server, Code, Database, Search, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Server, Code, Database, Search, Globe, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Container } from "@/components/layout/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Button } from "@/components/ui/button";
@@ -9,6 +9,8 @@ import { servicesData } from "@/data/services";
 export function ServicesPreviewSection() {
   const getServiceIcon = (iconName: string) => {
     switch (iconName) {
+      case "Globe":
+        return <Globe className="w-5 h-5 text-blue-400" />;
       case "Server":
         return <Server className="w-5 h-5 text-indigo-400" />;
       case "Code":

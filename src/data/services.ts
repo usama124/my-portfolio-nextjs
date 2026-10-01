@@ -2,6 +2,30 @@ import { ServiceItem } from "@/types";
 
 export const servicesData: ServiceItem[] = [
   {
+    id: "modern-web-development",
+    title: "Modern Web & Full-Stack Application Development",
+    shortDescription:
+      "Production-ready, responsive web applications built with React, Next.js (App Router), TypeScript, Tailwind CSS, and Node.js.",
+    fullDescription:
+      "I engineer type-safe, accessible, and fast web applications from concept to deployment. From interactive developer utilities and real-time dashboards to full-stack platforms, I build modern frontends integrated cleanly with scalable backend APIs and client-side computational engines.",
+    iconName: "Globe",
+    targetAudience: "Startups, businesses, and product teams needing responsive web applications, SaaS dashboards, interactive client-side tools, or modern full-stack architectures.",
+    problemsSolved: [
+      "Slow initial page loads and poor Core Web Vitals performance",
+      "Cluttered, untyped frontend codebases with high maintenance overhead",
+      "Lack of clean type contracts between frontend clients and backend APIs",
+      "Inconsistent responsive design and sluggish UI state transitions"
+    ],
+    deliverables: [
+      "Modular Next.js (App Router) / React application codebases",
+      "Strict TypeScript type safety and reusable component systems",
+      "Custom responsive design with Tailwind CSS and dark/light theming",
+      "Seamless RESTful API / WebSocket integrations and client-side state engines"
+    ],
+    technologies: ["React", "Next.js", "TypeScript", "Node.js", "JavaScript", "Tailwind CSS", "RESTful APIs", "Web Crypto API"],
+    relatedProjectSlugs: ["devbite-tools", "humkinar-search-service"]
+  },
+  {
     id: "backend-microservices",
     title: "Python Backend & Microservices Architecture",
     shortDescription:

@@ -23,7 +23,7 @@ export function FeaturedProjectsSection() {
           />
 
           <Button href="/projects" variant="glass" size="md" icon={ArrowRight}>
-            View All 19 Projects
+            {`View All ${projectsData.length} Projects`}
           </Button>
         </div>
 
@@ -39,7 +39,7 @@ export function FeaturedProjectsSection() {
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-sm font-medium text-slate-200 hover:text-white hover:border-indigo-500/40 transition-all hover:bg-slate-800 shadow-sm"
           >
             <Sparkles className="w-4 h-4 text-indigo-400" />
-            <span>Explore the complete 19-project catalog & source repositories</span>
+            <span>{`Explore the complete ${projectsData.length}-project catalog & applications`}</span>
             <ArrowRight className="w-4 h-4 text-slate-400" />
           </Link>
         </div>

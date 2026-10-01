@@ -2,6 +2,39 @@ import { Project } from "@/types";
 
 export const projectsData: Project[] = [
   {
+    slug: "devbite-tools",
+    title: "DevBite — Online Developer Tools",
+    tagline: "Free, fast, and privacy-first web developer toolbox featuring 110+ client-side utilities.",
+    description:
+      "Architected and built DevBite (devbite.dev), an online developer platform featuring 110+ interactive utility tools spanning JSON formatting, regex validation, UUID generation, Base64 & Hex encoding, SQL manipulation, cryptographic hashing, and data transformation. Built 100% client-side with zero server telemetry for absolute data privacy.",
+    category: "web-applications",
+    categoryLabel: "Web Applications & Full-Stack",
+    technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Web Crypto API", "Web Workers", "Lucide Icons"],
+    featured: true,
+    liveUrl: "https://devbite.dev",
+    role: "Creator & Lead Full-Stack Engineer",
+    period: "2025 – Present",
+    highlights: [
+      "Engineered 110+ interactive developer utilities operating 100% in-browser with zero server data transfer.",
+      "Implemented a dynamic theming system supporting multi-palette themes (Indigo, Ocean, Emerald), customizable typography, and system dark/light modes.",
+      "Integrated global keyboard shortcut navigation and instant command palette (Cmd+K) for rapid tool discovery.",
+      "Achieved sub-millisecond execution speeds utilizing pure TypeScript parsing engines and native Web Crypto APIs."
+    ],
+    architectureOverview:
+      "A modern Next.js (App Router) single-page and multi-route architecture powered by React Server Components, client-side utility engines, localized storage synchronization, and modular tool registry abstractions. Employs browser-native Web Crypto APIs and Web Workers for high-throughput client-side computation.",
+    keyFeatures: [
+      "110+ categorized developer tools: Text, JSON, Encoding, Security, SQL, Data/CSV, and File utilities",
+      "100% Client-Side Privacy: zero backend data transmission or telemetry",
+      "Command Palette (Cmd+K) and real-time fuzzy search across the complete tool registry",
+      "Customizable themes, palettes, font families, and interface density settings",
+      "Modern responsive UI with glassmorphic accents, clean typography, and accessibility"
+    ],
+    challengesSolved: [
+      "Engineered complex client-side parsing algorithms (JSON diffs, SQL dialect formatters, CSV tabular profilers) to execute reliably within the browser environment.",
+      "Designed a pluggable, scalable tool architecture allowing rapid creation of new tools with unified state management, clipboard workflows, and error boundaries."
+    ]
+  },
+  {
     slug: "humkinar-web-crawler",
     title: "Humkinar Web Crawler",
     tagline: "Large-scale Urdu web crawling, content extraction, and indexing engine.",
