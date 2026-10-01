@@ -47,7 +47,7 @@ export const servicesData: ServiceItem[] = [
       "CI/CD deployment readiness and configuration management"
     ],
     technologies: ["Python", "FastAPI", "Django", "Flask", "Docker", "PostgreSQL", "Redis", "Celery/Task Queues"],
-    relatedProjectSlugs: ["kinto-hr-backend", "ballogy-ai-basketball-backend", "ehr-backend-base"]
+    relatedProjectSlugs: ["kinto-hr-backend", "ai-based-basketball-coaching-backend", "ehr-backend-base"]
   },
   {
     id: "rest-api-engineering",
@@ -71,7 +71,7 @@ export const servicesData: ServiceItem[] = [
       "Webhooks and asynchronous event handlers for external payment/messaging gateways"
     ],
     technologies: ["FastAPI", "Django REST Framework", "Pydantic", "Redis", "PostgreSQL", "Stripe API", "Twilio API"],
-    relatedProjectSlugs: ["humkinar-search-service", "ballogy-ai-basketball-backend", "fancoin-sports-ticketing-backend"]
+    relatedProjectSlugs: ["humkinar-search-service", "ai-based-basketball-coaching-backend", "fancoin-sports-ticketing-backend"]
   },
   {
     id: "data-engineering-etl",

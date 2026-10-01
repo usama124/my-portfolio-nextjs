@@ -27,7 +27,7 @@ export const experienceData: ExperienceItem[] = [
         technologies: ["Python", "FastAPI", "Apache Airflow", "PostgreSQL", "ClickHouse"],
       },
       {
-        name: "Ballogy (AI Basketball Coaching App)",
+        name: "AI Based Basketball Coaching App",
         description: "Engineered scalable backend microservices, workout submission pipelines, Twilio messaging alerts, and Stripe recurring payment automation on AWS.",
         technologies: ["Python", "Django", "FastAPI", "PostgreSQL", "AWS (SES, S3, CloudFront, Lambda)", "Docker"],
       },

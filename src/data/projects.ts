@@ -191,8 +191,8 @@ export const projectsData: Project[] = [
     ]
   },
   {
-    slug: "ballogy-ai-basketball-backend",
-    title: "Ballogy (AI Basketball Coaching Platform)",
+    slug: "ai-based-basketball-coaching-backend",
+    title: "AI Based Basketball Coaching Platform",
     tagline: "Backend microservices, workout submission pipelines, and payment automation on AWS.",
     description:
       "Engineered the backend of a basketball coaching app using Django, FastAPI, PostgreSQL, and Docker-based microservices. Implemented core business logic, APIs, Twilio-powered messaging, and subscription/payment automation, ensuring a secure and scalable backend architecture.",
