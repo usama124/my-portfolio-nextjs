@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, Phone, MapPin, Calendar, FileText, ArrowUpRight } from "lucide-react";
 import { GithubIcon, LinkedinIcon, TwitterIcon, InstagramIcon } from "@/components/ui/icons";
 import { Container } from "./container";
@@ -27,26 +28,32 @@ export function Footer() {
   };
 
   return (
-    <footer className="mt-24 border-t border-slate-800/80 bg-slate-950/60 backdrop-blur-md relative overflow-hidden">
+    <footer className="mt-24 border-t border-slate-800/80 bg-slate-950/70 backdrop-blur-md relative overflow-hidden">
       {/* Subtle top glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-px bg-gradient-to-r from-transparent via-indigo-500/40 to-transparent" />
 
-      <Container size="lg" className="py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+      <Container size="lg" className="py-12 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-10">
           {/* Brand Col (2 cols on lg) */}
-          <div className="lg:col-span-2 space-y-4">
-            <Link href="/" className="flex items-center gap-3 group inline-flex">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-indigo-600 to-cyan-400 flex items-center justify-center text-white font-bold text-xs shadow-md">
-                UT
+          <div className="sm:col-span-2 lg:col-span-2 space-y-4">
+            <Link href="/" className="inline-flex items-center gap-2.5 group">
+              <div className="relative w-8 h-8 rounded-full overflow-hidden ring-2 ring-indigo-500/40 shrink-0 shadow-md">
+                <Image
+                  src="/images/avatar.png"
+                  alt="Usama Tahir"
+                  fill
+                  sizes="32px"
+                  className="object-cover object-top"
+                />
               </div>
               <span className="font-bold text-base text-white tracking-tight group-hover:text-indigo-300 transition-colors">
                 Usama Tahir
               </span>
             </Link>
-            <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
-              Senior Software Engineer & AI Engineer specializing in resilient Python backends, high-throughput microservices, data engineering pipelines, and production AI integrations.
+            <p className="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm">
+              Senior Software Engineer & AI Engineer specializing in modern full-stack web applications, resilient Python microservices, data engineering pipelines, and production AI integrations.
             </p>
-            <div className="flex flex-wrap gap-2 pt-2">
+            <div className="flex flex-wrap gap-2 pt-1">
               {socialLinks
                 .filter((s) => s.primary)
                 .map((social) => (
@@ -69,7 +76,7 @@ export function Footer() {
             <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-300 font-mono">
               Navigation
             </h3>
-            <ul className="space-y-2 text-sm text-slate-400">
+            <ul className="space-y-2 text-xs sm:text-sm text-slate-400">
               <li>
                 <Link href="/about" className="hover:text-white transition-colors">
                   About Me
@@ -103,7 +110,12 @@ export function Footer() {
             <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-300 font-mono">
               Specialties
             </h3>
-            <ul className="space-y-2 text-sm text-slate-400">
+            <ul className="space-y-2 text-xs sm:text-sm text-slate-400">
+              <li>
+                <Link href="/services#modern-web-development" className="hover:text-white transition-colors">
+                  React & Next.js Web Apps
+                </Link>
+              </li>
               <li>
                 <Link href="/services#backend-microservices" className="hover:text-white transition-colors">
                   Python Microservices
@@ -120,11 +132,6 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/services#web-scraping-crawling" className="hover:text-white transition-colors">
-                  Web Crawling & Search
-                </Link>
-              </li>
-              <li>
                 <Link href="/services#ai-ml-integration" className="hover:text-white transition-colors">
                   AI Model Integration
                 </Link>
@@ -137,12 +144,12 @@ export function Footer() {
             <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-300 font-mono">
               Get in Touch
             </h3>
-            <ul className="space-y-2 text-sm text-slate-400">
+            <ul className="space-y-2 text-xs sm:text-sm text-slate-400">
               <li className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-indigo-400 shrink-0" />
                 <a
                   href={`mailto:${profileData.contact.email}`}
-                  className="hover:text-white transition-colors truncate"
+                  className="hover:text-white transition-colors truncate max-w-[200px]"
                 >
                   {profileData.contact.email}
                 </a>
@@ -185,9 +192,9 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className="mt-12 pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 text-center sm:text-left">
           <p>© {currentYear} Usama Tahir (Osama Qureshi). All rights reserved.</p>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
             <Link href="/contact" className="hover:text-slate-400 transition-colors">
               Contact
             </Link>
@@ -208,4 +215,3 @@ export function Footer() {
     </footer>
   );
 }
-

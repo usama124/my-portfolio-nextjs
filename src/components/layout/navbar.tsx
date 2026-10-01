@@ -32,36 +32,36 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
-          ? "bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80 py-3 shadow-lg shadow-black/20"
-          : "bg-transparent py-5"
+          ? "bg-slate-950/85 backdrop-blur-md border-b border-slate-800/80 py-2.5 sm:py-3 shadow-lg shadow-black/20"
+          : "bg-transparent py-4 sm:py-5"
       }`}
     >
       <Container size="lg">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-4">
           {/* Brand */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="relative w-9 h-9 rounded-full overflow-hidden ring-2 ring-indigo-500/40 group-hover:ring-indigo-400/70 transition-all duration-300 shadow-md shadow-indigo-500/20 group-hover:scale-105 shrink-0">
+          <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group shrink-0">
+            <div className="relative w-8 h-8 sm:w-9 sm:h-9 rounded-full overflow-hidden ring-2 ring-indigo-500/40 group-hover:ring-indigo-400/70 transition-all duration-300 shadow-md shadow-indigo-500/20 group-hover:scale-105 shrink-0">
               <Image
                 src="/images/avatar.png"
                 alt="Usama Tahir"
                 fill
-                sizes="36px"
+                sizes="(max-width: 640px) 32px, 36px"
                 className="object-cover object-top"
                 priority
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-semibold text-sm tracking-tight text-white group-hover:text-indigo-300 transition-colors leading-tight">
+              <span className="font-semibold text-xs sm:text-sm tracking-tight text-white group-hover:text-indigo-300 transition-colors leading-tight">
                 Usama Tahir
               </span>
-              <span className="text-[11px] font-mono text-slate-400 leading-tight">
-                Senior Backend & AI
+              <span className="text-[10px] sm:text-[11px] font-mono text-slate-400 leading-tight hidden xs:inline sm:inline">
+                Senior Full-Stack & AI Engineer
               </span>
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-1 bg-slate-900/60 p-1.5 rounded-full border border-white/5 backdrop-blur-md">
+          {/* Desktop Navigation (lg+) */}
+          <nav className="hidden lg:flex items-center gap-1 bg-slate-900/70 p-1.5 rounded-full border border-white/5 backdrop-blur-md">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
@@ -80,8 +80,8 @@ export function Navbar() {
             })}
           </nav>
 
-          {/* Right Action CTAs */}
-          <div className="hidden lg:flex items-center gap-3">
+          {/* Right Action CTAs (lg+) */}
+          <div className="hidden lg:flex items-center gap-3 shrink-0">
             <Link
               href="/contact"
               className={`text-xs font-medium px-3.5 py-2 rounded-xl transition-colors ${
@@ -102,11 +102,19 @@ export function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
-          <MobileNav />
+          {/* Tablet & Mobile Right controls */}
+          <div className="flex items-center gap-2 lg:hidden">
+            <Link
+              href="/meeting"
+              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-indigo-600/90 hover:bg-indigo-600 text-white shadow-sm transition-all"
+            >
+              <Calendar className="w-3.5 h-3.5" />
+              <span>Book Call</span>
+            </Link>
+            <MobileNav />
+          </div>
         </div>
       </Container>
     </header>
   );
 }
-
