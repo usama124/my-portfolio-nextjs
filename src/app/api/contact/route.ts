@@ -51,10 +51,10 @@ export async function POST(req: NextRequest) {
     const recipientEmail = process.env.CONTACT_RECEIVER_EMAIL || "usamatahir717@gmail.com";
 
     const emailResponse = await resend.emails.send({
-      from: "Portfolio Contact <onboarding@resend.dev>",
+      from: "Portfolio Contact <contact@devbite.dev>",
       to: [recipientEmail],
       replyTo: email.trim(),
-      subject: `[Portfolio Inquiry] ${subject.trim()} — ${name.trim()}`,
+      subject: `[Inquiry] ${subject.trim()} — ${name.trim()}`,
       text: `
 New message received from your portfolio contact form:
 
