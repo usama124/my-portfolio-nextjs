@@ -82,10 +82,10 @@ export const successStoriesData: SuccessStoryItem[] = [
     id: "kinto-hr-multi-tenancy",
     slug: "kinto-hr-multi-tenancy",
     title: "Building a Subdomain-Isolated Multi-Tenant SaaS Architecture",
-    subtitle: "Designing secure multi-tenancy, granular RBAC, and organizational hierarchies with FastAPI.",
+    subtitle: "Designing secure multi-tenancy, granular RBAC, and organizational hierarchies with NextJS.",
     clientOrProject: "KintoHR Platform",
     domain: "Enterprise SaaS, Multi-Tenancy & Access Control",
-    technologies: ["Python", "FastAPI", "PostgreSQL", "Tortoise ORM", "Docker", "Git"],
+    technologies: ["NextJS", "NodeJS", "PostgreSQL", "TypeScript", "Docker", "Git", "Redis", "Keycloak"],
     challenge:
       "Enterprise HR software requires absolute data isolation between customer organizations, dynamic subdomain routing, hierarchical role permissions (Super Admin, HR Manager, Department Head, Employee), and fast asynchronous query execution.",
     solution:
@@ -101,7 +101,7 @@ export const successStoriesData: SuccessStoryItem[] = [
       "Achieved low API response latencies using asynchronous Python event loops.",
       "Published clean, open-source codebase demonstrating enterprise architectural principles."
     ],
-    relatedProjectSlug: "kinto-hr-backend"
+    relatedProjectSlug: "kinto-hr-system"
   },
   {
     id: "epidemic-political-surveillance",

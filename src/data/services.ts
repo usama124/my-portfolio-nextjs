@@ -47,7 +47,7 @@ export const servicesData: ServiceItem[] = [
       "CI/CD deployment readiness and configuration management"
     ],
     technologies: ["Python", "FastAPI", "Django", "Flask", "Docker", "PostgreSQL", "Redis", "Celery/Task Queues"],
-    relatedProjectSlugs: ["kinto-hr-backend", "ai-based-basketball-coaching-backend", "ehr-backend-base"]
+    relatedProjectSlugs: ["kinto-hr-system", "ai-based-basketball-coaching-backend", "ehr-backend-base"]
   },
   {
     id: "rest-api-engineering",
@@ -167,7 +167,7 @@ export const servicesData: ServiceItem[] = [
       "Relational ORM data layer integration (SQLAlchemy, Tortoise ORM, Django ORM)"
     ],
     technologies: ["PostgreSQL", "MySQL", "Redis", "MongoDB", "ClickHouse", "SQLAlchemy", "Tortoise ORM"],
-    relatedProjectSlugs: ["kinto-hr-backend", "humkinar-search-service", "etl-pipeline-application"]
+    relatedProjectSlugs: ["kinto-hr-system", "humkinar-search-service", "etl-pipeline-application"]
   }
 ];
 

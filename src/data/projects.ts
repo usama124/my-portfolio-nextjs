@@ -159,7 +159,7 @@ export const projectsData: Project[] = [
     ]
   },
   {
-    slug: "kinto-hr-backend",
+    slug: "kinto-hr-system",
     title: "KintoHR Multi-Tenant HRMS",
     tagline: "Subdomain-isolated multi-tenant HR platform with role-based access control.",
     description:
@@ -168,7 +168,7 @@ export const projectsData: Project[] = [
     categoryLabel: "Backend & Microservices",
     technologies: ["Python", "FastAPI", "PostgreSQL", "Tortoise ORM", "Docker", "Git"],
     featured: true,
-    githubUrl: "https://github.com/usama124/kinto-hr-be",
+    githubUrl: "https://github.com/usama124/kinto-hr",
     role: "Lead Backend Architect",
     period: "2024",
     highlights: [
