@@ -12,11 +12,11 @@ export const metadata: Metadata = {
   title: "Engineering Experience | Usama Tahir — Senior Software & AI Engineer",
   description: "6+ years of professional engineering experience by Usama Tahir (Osama Qureshi). Senior Software Engineer at FiveRivers Technologies and Research Officer at KICS UET Lahore, Pakistan.",
   keywords: ["Usama Tahir experience", "FiveRivers Technologies engineer", "KICS UET Lahore", "Senior Software Engineer Pakistan", "Osama Qureshi engineer"],
-  alternates: { canonical: "https://osamacodes.com/experience" },
+  alternates: { canonical: "https://portfolio.devbite.dev/experience" },
   openGraph: {
     title: "Engineering Experience | Usama Tahir",
     description: "Senior Software Engineer at FiveRivers Technologies since 2020. 6+ years spanning Python microservices, AI platforms, and enterprise-scale data systems.",
-    url: "https://osamacodes.com/experience",
+    url: "https://portfolio.devbite.dev/experience",
     siteName: "Usama Tahir — Portfolio",
     images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "Usama Tahir" }],
     type: "website",

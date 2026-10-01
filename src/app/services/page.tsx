@@ -22,11 +22,11 @@ export const metadata: Metadata = {
   title: "Engineering Services | Usama Tahir — Backend, AI & Data Consulting",
   description: "Hire Usama Tahir (Osama Qureshi) for expert backend engineering, FastAPI microservices, ETL pipelines, web crawlers, AI integration, and full-stack consulting. Based in Lahore, available globally.",
   keywords: ["hire Python engineer", "FastAPI developer for hire", "ETL pipeline consultant", "web crawler developer", "AI integration engineer Pakistan", "freelance backend developer Lahore"],
-  alternates: { canonical: "https://osamacodes.com/services" },
+  alternates: { canonical: "https://portfolio.devbite.dev/services" },
   openGraph: {
     title: "Engineering Services | Usama Tahir",
     description: "Expert backend, AI, and data engineering consulting. FastAPI microservices, ETL pipelines, web crawlers, and AI platform integration.",
-    url: "https://osamacodes.com/services",
+    url: "https://portfolio.devbite.dev/services",
     siteName: "Usama Tahir — Portfolio",
     images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "Usama Tahir" }],
     type: "website",

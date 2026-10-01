@@ -24,12 +24,12 @@ export const metadata: Metadata = {
     "hire Python engineer",
     "backend consultant Pakistan",
   ],
-  alternates: { canonical: "https://osamacodes.com" },
+  alternates: { canonical: "https://portfolio.devbite.dev" },
   openGraph: {
     title: "Usama Tahir — Senior Software & AI Engineer",
     description:
       "6+ years engineering Python backends, AI systems, and scalable SaaS platforms. Senior Software Engineer at FiveRivers Technologies. Available for freelance and consulting.",
-    url: "https://osamacodes.com",
+    url: "https://portfolio.devbite.dev",
     siteName: "Usama Tahir — Portfolio",
     images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "Usama Tahir — Senior Software & AI Engineer" }],
     type: "website",

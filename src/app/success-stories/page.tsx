@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   title: "Technical Case Studies & Success Stories | Usama Tahir",
   description: "In-depth engineering case studies by Usama Tahir (Osama Qureshi) — national-scale web crawlers, multimodal AI platforms, SaaS backends, and enterprise ETL systems. Real architecture. Real outcomes.",
   keywords: ["Usama Tahir case studies", "engineering case studies Pakistan", "web crawler architecture", "AI platform architecture", "backend engineering success stories"],
-  alternates: { canonical: "https://osamacodes.com/success-stories" },
+  alternates: { canonical: "https://portfolio.devbite.dev/success-stories" },
   openGraph: {
     title: "Technical Case Studies & Success Stories | Usama Tahir",
     description: "Real engineering deep dives: national search engine crawlers, multimodal AI platforms, enterprise ETL systems, and SaaS backend architectures.",
-    url: "https://osamacodes.com/success-stories",
+    url: "https://portfolio.devbite.dev/success-stories",
     siteName: "Usama Tahir — Portfolio",
     images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "Usama Tahir" }],
     type: "website",

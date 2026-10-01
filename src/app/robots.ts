@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://osamacodes.com/sitemap.xml",
+    sitemap: "https://portfolio.devbite.dev/sitemap.xml",
   };
 }

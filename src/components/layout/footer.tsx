@@ -195,12 +195,12 @@ export function Footer() {
               Schedule Meeting
             </Link>
             <a
-              href="https://osamacodes.com"
+              href="https://portfolio.devbite.dev"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-slate-400 transition-colors"
             >
-              osamacodes.com
+              portfolio.devbite.dev
             </a>
           </div>
         </div>

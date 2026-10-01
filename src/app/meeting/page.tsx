@@ -19,11 +19,11 @@ export const metadata: Metadata = {
   title: "Book a Meeting | Consult with Usama Tahir — Senior Software & AI Engineer",
   description: "Schedule a free 30-minute technical consultation with Usama Tahir (Osama Qureshi, osamacodes) via Google Calendar. Discuss backend architecture, AI integration, freelance projects, or senior engineering roles.",
   keywords: ["book meeting Usama Tahir", "consult Python engineer", "hire AI engineer Pakistan", "schedule technical consultation", "freelance developer consultation"],
-  alternates: { canonical: "https://osamacodes.com/meeting" },
+  alternates: { canonical: "https://portfolio.devbite.dev/meeting" },
   openGraph: {
     title: "Book a Meeting | Usama Tahir — Senior Software & AI Engineer",
     description: "Schedule a 30-minute technical consultation to discuss backend architecture, AI integration, freelance projects, or senior engineering opportunities.",
-    url: "https://osamacodes.com/meeting",
+    url: "https://portfolio.devbite.dev/meeting",
     siteName: "Usama Tahir — Portfolio",
     images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "Usama Tahir" }],
     type: "website",

@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   title: "Engineering Projects | Usama Tahir — Python, AI & Full-Stack Systems",
   description: "19+ real engineering projects by Usama Tahir (Osama Qureshi, osamacodes) — web crawlers, AI platform APIs, FastAPI microservices, ETL pipelines, and full-stack SaaS systems. Open source on GitHub.",
   keywords: ["Usama Tahir projects", "osamacodes GitHub", "Python microservices portfolio", "FastAPI projects", "AI engineering portfolio", "web crawler Python"],
-  alternates: { canonical: "https://osamacodes.com/projects" },
+  alternates: { canonical: "https://portfolio.devbite.dev/projects" },
   openGraph: {
     title: "Engineering Projects | Usama Tahir",
     description: "19+ real-world engineering projects — Python backends, AI APIs, web crawlers, ETL pipelines, and SaaS systems.",
-    url: "https://osamacodes.com/projects",
+    url: "https://portfolio.devbite.dev/projects",
     siteName: "Usama Tahir — Portfolio",
     images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "Usama Tahir" }],
     type: "website",

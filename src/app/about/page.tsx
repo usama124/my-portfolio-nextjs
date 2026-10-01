@@ -32,12 +32,12 @@ export const metadata: Metadata = {
     "Python Engineer",
     "FiveRivers Technologies",
   ],
-  alternates: { canonical: "https://osamacodes.com/about" },
+  alternates: { canonical: "https://portfolio.devbite.dev/about" },
   openGraph: {
     title: "About Usama Tahir | Senior Software & AI Engineer",
     description:
       "6+ years engineering Python backends, AI systems, and scalable microservices. Senior Software Engineer at FiveRivers Technologies, Lahore.",
-    url: "https://osamacodes.com/about",
+    url: "https://portfolio.devbite.dev/about",
     siteName: "Usama Tahir — Portfolio",
     images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "Usama Tahir" }],
     type: "profile",

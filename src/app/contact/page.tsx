@@ -23,11 +23,11 @@ export const metadata: Metadata = {
   title: "Contact Usama Tahir | Senior Software & AI Engineer — Hire or Collaborate",
   description: "Get in touch with Usama Tahir (Osama Qureshi, Usama Qureshi, osamacodes) for project inquiries, backend engineering consulting, AI integration, or senior engineering roles. Based in Lahore, available globally.",
   keywords: ["contact Usama Tahir", "hire Osama Qureshi", "freelance engineer Pakistan", "backend developer Lahore", "AI engineer for hire", "contact osamacodes"],
-  alternates: { canonical: "https://osamacodes.com/contact" },
+  alternates: { canonical: "https://portfolio.devbite.dev/contact" },
   openGraph: {
     title: "Contact Usama Tahir | Hire or Collaborate",
     description: "Available for backend engineering consulting, AI integration projects, and senior engineering roles. Reach out via email, WhatsApp, or the contact form.",
-    url: "https://osamacodes.com/contact",
+    url: "https://portfolio.devbite.dev/contact",
     siteName: "Usama Tahir — Portfolio",
     images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "Usama Tahir" }],
     type: "website",

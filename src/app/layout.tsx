@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://osamacodes.com"),
+  metadataBase: new URL("https://portfolio.devbite.dev"),
   title: {
     default: "Usama Tahir — Senior Software & AI Engineer",
     template: "%s | Usama Tahir",
@@ -39,12 +39,12 @@ export const metadata: Metadata = {
     "Freelance Developer",
     "Machine Learning Engineer",
   ],
-  authors: [{ name: "Usama Tahir", url: "https://osamacodes.com" }],
+  authors: [{ name: "Usama Tahir", url: "https://portfolio.devbite.dev" }],
   creator: "Usama Tahir",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://osamacodes.com",
+    url: "https://portfolio.devbite.dev",
     siteName: "Usama Tahir — Portfolio",
     title: "Usama Tahir — Senior Software & AI Engineer",
     description:
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://osamacodes.com",
+    canonical: "https://portfolio.devbite.dev",
   },
 };
 
@@ -93,7 +93,7 @@ const jsonLd = {
     "Usama Tahir Qureshi",
     "osamacodes",
   ],
-  url: "https://osamacodes.com",
+  url: "https://portfolio.devbite.dev",
   email: "m.usamatahir0@gmail.com",
   jobTitle: "Senior Software Engineer & AI Engineer",
   worksFor: {

@@ -56,11 +56,11 @@ export async function generateMetadata({
       "osamacodes",
       "engineering case study",
     ],
-    alternates: { canonical: `https://osamacodes.com/projects/${project.slug}` },
+    alternates: { canonical: `https://portfolio.devbite.dev/projects/${project.slug}` },
     openGraph: {
       title: `${project.title} | Usama Tahir`,
       description: desc,
-      url: `https://osamacodes.com/projects/${project.slug}`,
+      url: `https://portfolio.devbite.dev/projects/${project.slug}`,
       siteName: "Usama Tahir — Portfolio",
       images: project.image
         ? [{ url: project.image, width: 1200, height: 630, alt: project.title }]

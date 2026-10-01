@@ -3,7 +3,7 @@ import { projectsData } from "@/data/projects";
 import { Project } from "@/types";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://osamacodes.com";
+  const baseUrl = "https://portfolio.devbite.dev";
 
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: new Date(), changeFrequency: "monthly", priority: 1 },

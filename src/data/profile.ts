@@ -23,7 +23,7 @@ export const profileData: ProfileData = {
     whatsappUrl: "https://wa.me/923034621074?text=Hi%20Usama%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project.",
     calendarUrl: "https://calendar.app.google/woZtgKv7DYBVE3917",
     formspreeEndpoint: "https://formspree.io/f/xgvnaryd",
-    canonicalUrl: "https://osamacodes.com",
+    canonicalUrl: "https://portfolio.devbite.dev",
   },
   resume: {
     filename: "Usama-Tahir-Python-Resume-20251118.pdf",
