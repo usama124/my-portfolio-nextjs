@@ -9,9 +9,26 @@ import { experienceData } from "@/data/experience";
 import { profileData } from "@/data/profile";
 
 export const metadata: Metadata = {
-  title: "Work Experience",
-  description:
-    "Explore the professional engineering timeline of Usama Tahir — Senior Software Engineer at FiveRivers Technologies and Research Officer at KICS UET Lahore.",
+  title: "Engineering Experience | Usama Tahir — Senior Software & AI Engineer",
+  description: "6+ years of professional engineering experience by Usama Tahir (Osama Qureshi). Senior Software Engineer at FiveRivers Technologies and Research Officer at KICS UET Lahore, Pakistan.",
+  keywords: ["Usama Tahir experience", "FiveRivers Technologies engineer", "KICS UET Lahore", "Senior Software Engineer Pakistan", "Osama Qureshi engineer"],
+  alternates: { canonical: "https://osamacodes.com/experience" },
+  openGraph: {
+    title: "Engineering Experience | Usama Tahir",
+    description: "Senior Software Engineer at FiveRivers Technologies since 2020. 6+ years spanning Python microservices, AI platforms, and enterprise-scale data systems.",
+    url: "https://osamacodes.com/experience",
+    siteName: "Usama Tahir — Portfolio",
+    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "Usama Tahir" }],
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Engineering Experience | Usama Tahir",
+    description: "Senior Software Engineer at FiveRivers Technologies since 2020. 6+ years spanning Python microservices, AI platforms, and enterprise-scale data systems.",
+    creator: "@osamacodes",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function ExperiencePage() {

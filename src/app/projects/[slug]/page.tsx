@@ -42,12 +42,38 @@ export async function generateMetadata({
     };
   }
 
+  const techList = project.technologies.slice(0, 5).join(", ");
+  const desc = `${project.description} Technologies: ${techList}.`;
+
   return {
-    title: `${project.title} | Case Study`,
-    description: project.description,
+    title: `${project.title} | Engineering Case Study — Usama Tahir`,
+    description: desc,
+    keywords: [
+      project.title,
+      ...project.technologies.slice(0, 6),
+      "Usama Tahir",
+      "Osama Qureshi",
+      "osamacodes",
+      "engineering case study",
+    ],
+    alternates: { canonical: `https://osamacodes.com/projects/${project.slug}` },
     openGraph: {
-      title: `${project.title} | Usama Tahir Portfolio`,
+      title: `${project.title} | Usama Tahir`,
+      description: desc,
+      url: `https://osamacodes.com/projects/${project.slug}`,
+      siteName: "Usama Tahir — Portfolio",
+      images: project.image
+        ? [{ url: project.image, width: 1200, height: 630, alt: project.title }]
+        : [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: project.title }],
+      type: "article",
+      locale: "en_US",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} | Usama Tahir`,
       description: project.description,
+      creator: "@osamacodes",
+      images: project.image ? [project.image] : ["/images/og-image.jpg"],
     },
   };
 }

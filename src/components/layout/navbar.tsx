@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Calendar } from "lucide-react";
 import { Container } from "./container";
@@ -38,15 +39,22 @@ export function Navbar() {
       <Container size="lg">
         <div className="flex items-center justify-between">
           {/* Brand */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-cyan-400 flex items-center justify-center text-white font-bold text-sm shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">
-              UT
+          <Link href="/" className="flex items-center gap-2.5 group">
+            <div className="relative w-9 h-9 rounded-full overflow-hidden ring-2 ring-indigo-500/40 group-hover:ring-indigo-400/70 transition-all duration-300 shadow-md shadow-indigo-500/20 group-hover:scale-105 shrink-0">
+              <Image
+                src="/images/avatar.png"
+                alt="Usama Tahir"
+                fill
+                sizes="36px"
+                className="object-cover object-top"
+                priority
+              />
             </div>
             <div className="flex flex-col">
-              <span className="font-semibold text-sm tracking-tight text-white group-hover:text-indigo-300 transition-colors">
+              <span className="font-semibold text-sm tracking-tight text-white group-hover:text-indigo-300 transition-colors leading-tight">
                 Usama Tahir
               </span>
-              <span className="text-[11px] font-mono text-slate-400">
+              <span className="text-[11px] font-mono text-slate-400 leading-tight">
                 Senior Backend & AI
               </span>
             </div>

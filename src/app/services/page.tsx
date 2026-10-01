@@ -19,9 +19,26 @@ import { servicesData } from "@/data/services";
 import { projectsData } from "@/data/projects";
 
 export const metadata: Metadata = {
-  title: "Engineering Services",
-  description:
-    "Consulting and technical development services by Usama Tahir — Python microservices, FastAPI REST APIs, ETL data pipelines, web crawlers, and AI integration.",
+  title: "Engineering Services | Usama Tahir — Backend, AI & Data Consulting",
+  description: "Hire Usama Tahir (Osama Qureshi) for expert backend engineering, FastAPI microservices, ETL pipelines, web crawlers, AI integration, and full-stack consulting. Based in Lahore, available globally.",
+  keywords: ["hire Python engineer", "FastAPI developer for hire", "ETL pipeline consultant", "web crawler developer", "AI integration engineer Pakistan", "freelance backend developer Lahore"],
+  alternates: { canonical: "https://osamacodes.com/services" },
+  openGraph: {
+    title: "Engineering Services | Usama Tahir",
+    description: "Expert backend, AI, and data engineering consulting. FastAPI microservices, ETL pipelines, web crawlers, and AI platform integration.",
+    url: "https://osamacodes.com/services",
+    siteName: "Usama Tahir — Portfolio",
+    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "Usama Tahir" }],
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Engineering Services | Usama Tahir",
+    description: "Expert backend, AI, and data engineering consulting. FastAPI microservices, ETL pipelines, web crawlers, and AI platform integration.",
+    creator: "@osamacodes",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function ServicesPage() {

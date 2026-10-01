@@ -16,9 +16,26 @@ import { Button } from "@/components/ui/button";
 import { profileData } from "@/data/profile";
 
 export const metadata: Metadata = {
-  title: "Schedule a Meeting",
-  description:
-    "Book a 30-minute technical consultation or introduction with Usama Tahir via Google Calendar to discuss backend architecture, API engineering, ETL, or roles.",
+  title: "Book a Meeting | Consult with Usama Tahir — Senior Software & AI Engineer",
+  description: "Schedule a free 30-minute technical consultation with Usama Tahir (Osama Qureshi, osamacodes) via Google Calendar. Discuss backend architecture, AI integration, freelance projects, or senior engineering roles.",
+  keywords: ["book meeting Usama Tahir", "consult Python engineer", "hire AI engineer Pakistan", "schedule technical consultation", "freelance developer consultation"],
+  alternates: { canonical: "https://osamacodes.com/meeting" },
+  openGraph: {
+    title: "Book a Meeting | Usama Tahir — Senior Software & AI Engineer",
+    description: "Schedule a 30-minute technical consultation to discuss backend architecture, AI integration, freelance projects, or senior engineering opportunities.",
+    url: "https://osamacodes.com/meeting",
+    siteName: "Usama Tahir — Portfolio",
+    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "Usama Tahir" }],
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Book a Meeting | Usama Tahir — Senior Software & AI Engineer",
+    description: "Schedule a 30-minute technical consultation to discuss backend architecture, AI integration, freelance projects, or senior engineering opportunities.",
+    creator: "@osamacodes",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 const meetingAgendas = [

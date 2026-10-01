@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, Calendar, ArrowRight, Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/icons";
@@ -67,10 +68,16 @@ export function MobileNav() {
             <Link
               href="/"
               onClick={handleLinkClick}
-              className="flex items-center gap-2 group"
+              className="flex items-center gap-2.5 group"
             >
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-600 to-cyan-400 flex items-center justify-center text-white font-bold text-sm shadow-md">
-                UT
+              <div className="relative w-8 h-8 rounded-full overflow-hidden ring-2 ring-indigo-500/40 shrink-0">
+                <Image
+                  src="/images/avatar.png"
+                  alt="Usama Tahir"
+                  fill
+                  sizes="32px"
+                  className="object-cover object-top"
+                />
               </div>
               <span className="font-bold tracking-tight text-white group-hover:text-indigo-400 transition-colors">
                 Usama Tahir

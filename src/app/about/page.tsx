@@ -19,9 +19,38 @@ import { profileData } from "@/data/profile";
 import { educationData, certificationsData, languagesData } from "@/data/education";
 
 export const metadata: Metadata = {
-  title: "About Usama Tahir",
+  title: "About Usama Tahir | Senior Software & AI Engineer",
   description:
-    "Learn more about Usama Tahir (Osama Qureshi) — Senior Software Engineer & AI Engineer with 6+ years of experience in Python backends, microservices, and data pipelines.",
+    "Learn about Usama Tahir (Osama Qureshi, osamacodes) — Senior Software Engineer & AI Engineer with 6+ years of experience in Python backends, microservices, AI systems, and data pipelines. Based in Lahore, Pakistan.",
+  keywords: [
+    "Usama Tahir",
+    "Osama Tahir",
+    "Usama Qureshi",
+    "osamacodes",
+    "Senior Software Engineer Pakistan",
+    "AI Engineer Lahore",
+    "Python Engineer",
+    "FiveRivers Technologies",
+  ],
+  alternates: { canonical: "https://osamacodes.com/about" },
+  openGraph: {
+    title: "About Usama Tahir | Senior Software & AI Engineer",
+    description:
+      "6+ years engineering Python backends, AI systems, and scalable microservices. Senior Software Engineer at FiveRivers Technologies, Lahore.",
+    url: "https://osamacodes.com/about",
+    siteName: "Usama Tahir — Portfolio",
+    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "Usama Tahir" }],
+    type: "profile",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Usama Tahir | Senior Software & AI Engineer",
+    description:
+      "6+ years engineering Python backends, AI systems, and scalable microservices.",
+    creator: "@osamacodes",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function AboutPage() {
